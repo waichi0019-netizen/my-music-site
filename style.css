@@ -110,3 +110,27 @@ ul li a:hover {
   text-decoration: underline; /* マウスを乗せた時だけ線を出す */
 }
 
+.rainbow-text {
+  /* 虹色のグラデーション背景 */
+  background: linear-gradient(
+    to right, 
+    #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff, #ff0000
+  );
+  /* 背景を文字の形に切り抜く */
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* 文字色を透明にして背景を見せる */
+  color: transparent;
+  /* グラデーションの幅を広くして動きを出す */
+  background-size: 200% auto;
+  /* アニメーションの設定：3秒かけてループ */
+  animation: rainbow-move 3s linear infinite;
+  
+  display: inline-block; /* アニメーションを安定させるため */
+}
+
+/* 虹を動かすアニメーションの定義 */
+@keyframes rainbow-move {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
