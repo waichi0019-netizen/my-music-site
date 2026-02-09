@@ -45,10 +45,10 @@
     // ランダムに音符の種類を選ぶ
     note.innerText = notes[Math.floor(Math.random() * notes.length)];
     
-    // 出現位置（横幅）をランダムに
+    // 出現位置をランダムに
     note.style.left = Math.random() * 100 + "vw";
     
-    // 昇るスピードをランダムに（5秒〜10秒）
+    // 昇るスピードをランダムに
     const duration = Math.random() * 5 + 5;
     note.style.animationDuration = duration + "s";
     
@@ -57,7 +57,7 @@
 
     document.body.appendChild(note);
 
-    // アニメーションが終わったら要素を消す（メモリ節約！）
+    // アニメーションが終わったら要素を消す
     setTimeout(() => {
         note.remove();
     }, duration * 1000);
