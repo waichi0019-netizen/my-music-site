@@ -127,6 +127,8 @@ ul li a:hover {
   animation: rainbow-move 3s linear infinite;
   
   display: inline-block; /* アニメーションを安定させるため */
+    
+　transform: translateX(-15px); /* 左へ15px移動 */
 }
 
 /* 虹を動かすアニメーションの定義 */
