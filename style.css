@@ -110,3 +110,32 @@ ul li a:hover {
   text-decoration: underline; /* マウスを乗せた時だけ線を出す */
 }
 
+/* 音符のスタイル */
+.note {
+    position: fixed;
+    bottom: -50px; /* 画面の外（下）からスタート */
+    color: rgba(211, 84, 0, 0.3); /* サイトのテーマ色に合わせて薄いオレンジ */
+    font-size: 2rem;
+    pointer-events: none; /* マウスの邪魔をしない */
+    z-index: -1; /* コンテンツの後ろに配置 */
+    user-select: none;
+    animation: floatUp linear forwards;
+}
+
+/* 下から上へ、ゆらゆら昇るアニメーション */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) rotate(360deg); /* 画面の上まで移動しつつ回転 */
+        opacity: 0;
+    }
+}
