@@ -1,1 +1,99 @@
+<style>
+    /* 全体の下地：目に優しいクリーム色 */
+    body {
+        background-color: #fff9f2;
+        color: #4a4a4a;
+        font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+        line-height: 1.8;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
 
+    /* メインタイトル：薄橙の背景＋中央寄せ */
+    h1 {
+        background-color: #ffead0;
+        color: #d35400;
+        text-align: center;
+        padding: 40px 20px;
+        border-radius: 20px;
+        font-size: 2rem;
+        letter-spacing: 2px;
+        box-shadow: 0 4px 15px rgba(211, 84, 0, 0.1);
+        margin-bottom: 50px;
+    }
+
+    /* 箇条書き：目次のようなデザイン */
+    ul {
+        background: white;
+        padding: 25px 50px;
+        border-radius: 15px;
+        list-style-type: "🎵 ";
+        box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        margin-bottom: 60px;
+    }
+
+    ul li {
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+    /* 各楽曲のセクション */
+    section {
+        margin-bottom: 80px;
+    }
+
+    /* 曲名：左側にアクセントの線を */
+    h2 {
+        font-size: 1.5rem;
+        border-left: 8px solid #ffead0;
+        padding-left: 15px;
+        color: #333;
+        margin-bottom: 25px;
+    }
+
+    /* 動画：スマホでも横幅が自動調整されるように */
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9の比率 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    /* 紹介文：カード風のデザイン */
+    h3 {
+        font-weight: normal;
+        font-size: 1.05rem;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 15px;
+        border: 1px solid #ffead0;
+        margin-top: 25px;
+        position: relative;
+    }
+
+    /* 引用部分のような雰囲気のアクセント */
+    h3::before {
+        content: "Review";
+        position: absolute;
+        top: -12px;
+        left: 20px;
+        background: #ffead0;
+        color: #d35400;
+        padding: 0 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+</style>
