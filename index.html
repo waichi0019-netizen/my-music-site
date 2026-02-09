@@ -30,5 +30,34 @@
      <h3>（概要欄より）僕らは知らず知らず”選択”していることにに気付けていないかもしれない<br>
     虚像とはなんなのか、普通とはなんなのか…<br>
    「"当たり前”なんて言葉になんか騙されるな」色々なことについて考えさせられた大好きな曲です。 </h3>
+
+    function createNote() {
+    const notes = ['♪', '♫', '♬', '♩'];
+    const note = document.createElement('div');
+    note.className = 'note';
+    
+    // ランダムに音符の種類を選ぶ
+    note.innerText = notes[Math.floor(Math.random() * notes.length)];
+    
+    // 出現位置（横幅）をランダムに
+    note.style.left = Math.random() * 100 + "vw";
+    
+    // 昇るスピードをランダムに（5秒〜10秒）
+    const duration = Math.random() * 5 + 5;
+    note.style.animationDuration = duration + "s";
+    
+    // 大きさをランダムに
+    note.style.fontSize = Math.random() * 20 + 20 + "px";
+
+    document.body.appendChild(note);
+
+    // アニメーションが終わったら要素を消す（メモリ節約！）
+    setTimeout(() => {
+        note.remove();
+    }, duration * 1000);
+}
+
+// 1秒ごとに新しい音符を作る
+setInterval(createNote, 1000);
   </body>
 </html>
