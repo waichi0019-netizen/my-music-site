@@ -128,7 +128,7 @@ ul li a:hover {
   
   display: inline-block; /* アニメーションを安定させるため */
     
-　transform: translateX(-15px); /* 左へ15px移動 */
+　transform: translateX(-50px); /* 左へ15px移動 */
 }
 
 /* 虹を動かすアニメーションの定義 */
