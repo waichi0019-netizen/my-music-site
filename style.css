@@ -110,3 +110,45 @@ ul li a:hover {
   text-decoration: underline; /* マウスを乗せた時だけ線を出す */
 }
 
+/* 虹色に光るアニメーションの設定 */
+.rainbow-attention {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    
+    /* アニメーションの呼び出し（3秒かけて変化、無限に繰り返す） */
+    animation: rainbow-glow 3s infinite linear;
+}
+
+@keyframes rainbow-glow {
+    0% {
+        color: #ff0000;
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    17% {
+        color: #ff8000;
+        text-shadow: 0 0 10px rgba(255, 128, 0, 0.5);
+    }
+    33% {
+        color: #ffff00;
+        text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    }
+    50% {
+        color: #00ff00;
+        text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    67% {
+        color: #00ffff;
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    83% {
+        color: #0000ff;
+        text-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    }
+    100% {
+        color: #ff00ff;
+        text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    }
+}
