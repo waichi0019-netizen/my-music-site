@@ -1,4 +1,4 @@
-<style>
+
     /* 全体の下地：目に優しいクリーム色 */
     body {
         background-color: #fff9f2;
@@ -96,4 +96,18 @@
         font-weight: bold;
         border-radius: 5px;
     }
-</style>
+html {
+  /* スクロールをなめらかにする魔法の1行 */
+  scroll-behavior: smooth;
+}
+
+/* リンクの下線を消したり色を変えたりする設定（お好みで） */
+ul li a {
+  text-decoration: none;
+  color: #d35400; /* サイトのテーマ色に合わせる */
+}
+
+ul li a:hover {
+  text-decoration: underline; /* マウスを乗せた時だけ線を出す */
+}
+
