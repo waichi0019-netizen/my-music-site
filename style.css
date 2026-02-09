@@ -125,8 +125,6 @@ ul li a:hover {
   background-size: 200% auto;
   /* アニメーションの設定：3秒かけてループ */
 　animation: rainbow-move 3s linear infinite;
-    
-　margin-left: -20px;
   display: inline-block; /* アニメーションを安定させるため */
   
 }
