@@ -105,7 +105,7 @@ ul li a:hover {
 /* 音符のスタイル */
 .note {
     position: fixed;
-    bottom: -50px; /* 画面の外（下）からスタート */
+    bottom: -50px; /* 画面の外からスタート */
     color: rgba(211, 84, 0, 0.3); 
     font-size: 2rem;
     pointer-events: none; /* マウスの邪魔をしない */
