@@ -124,11 +124,11 @@ ul li a:hover {
   /* グラデーションの幅を広くして動きを出す */
   background-size: 200% auto;
   /* アニメーションの設定：3秒かけてループ */
-  animation: rainbow-move 3s linear infinite;
-  
-  display: inline-block; /* アニメーションを安定させるため */
+　animation: rainbow-move 3s linear infinite;
     
-　transform: translateX(-50px); /* 左へ15px移動 */
+　margin-left: -20px;
+  display: inline-block; /* アニメーションを安定させるため */
+  
 }
 
 /* 虹を動かすアニメーションの定義 */
